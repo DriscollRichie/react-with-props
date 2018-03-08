@@ -22,7 +22,7 @@ class App extends Component {
       return (
          <div className="App">
             <DisplayString string={ this.state.string } />
-            <CaptureString updateString={ this.state.updateString } />
+            <CaptureString updateString={ this.updateString } />
          </div>
       );
    }
