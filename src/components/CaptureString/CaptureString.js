@@ -6,6 +6,8 @@ export default class CaptureString extends Component {
       this.state = {
          string: ''
       }
+
+      this.updateString = this.updateString.bind(this)
    }
 
    updateString (e) {
