@@ -10,6 +10,8 @@ class App extends Component {
       this.state = {
          string: ''
       }
+
+      this.updateString = this.updateString.bind(this)
    }
 
    updateString (val) {
