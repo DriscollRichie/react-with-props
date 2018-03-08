@@ -17,7 +17,7 @@ export default class CaptureString extends Component {
    render () {
       return (
          <div id="CaptureString__parent">
-            <input placeholder="Enter a string here" />
+            <input placeholder="Enter a string here" onChange={ this.updateString } />
             <button></button>
          </div>
       )
