@@ -8,18 +8,23 @@ export default class CaptureString extends Component {
       }
 
       this.updateString = this.updateString.bind(this)
+      this.submitString = this.submitString.bind(this)
    }
 
    updateString (e) {
       this.setState({ string: e.target.value })
    }
 
+   submitString () {
+      this.props.updateString(this.state.string)
+      this.setState({ string: '' })
+   }
+
    render () {
-      console.log(this.props)
       return (
          <div id="CaptureString__parent">
             <input placeholder="Enter a string here" onChange={ this.updateString } value={ this.state.string } />
-            <button onClick={ () => this.props.updateString( this.state.string ) }>
+            <button onClick={ this.submitString }>
                Submit String
             </button>
          </div>
