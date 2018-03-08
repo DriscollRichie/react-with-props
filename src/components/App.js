@@ -15,7 +15,7 @@ class App extends Component {
    render() {
       return (
          <div className="App">
-            <DisplayString />
+            <DisplayString string={ this.state.string } />
             <CaptureString />
          </div>
       );
