@@ -12,6 +12,10 @@ class App extends Component {
       }
    }
 
+   updateString (val) {
+      this.setState({ string: val })
+   }
+
    render() {
       return (
          <div className="App">
