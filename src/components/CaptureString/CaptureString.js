@@ -4,7 +4,8 @@ export default class CaptureString extends Component {
    render () {
       return (
          <div id="CaptureString__parent">
-            <span>CaptureString Component</span>
+            <input placeholder="Enter a string here" />
+            <button></button>
          </div>
       )
    }
